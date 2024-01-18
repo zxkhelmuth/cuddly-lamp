@@ -1,0 +1,67 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 70%;
+    height: 80vh;
+    display: grid;
+    grid-template-areas: 
+    "header-suspensible header-suspensible header-suspensible"
+    "img precio informacion"
+    "comentarios comentarios comentarios"
+    ;
+}
+
+.header-suspensible{
+    grid-area: header-suspensible;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #fff 1px solid;
+}
+
+.img{
+    object-fit: cover ;
+    grid-area: img;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.precio{
+    grid-area: precio ;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    background-color: #000;
+    color: #fff;
+}
+
+#bocachico{
+    width: 100%;
+}
+
+.informacion{
+    grid-area: informacion;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.comentarios{
+    grid-area: comentarios;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
